@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        
+            <h1>Calculadora</h1>
+        
+        <div id="resultado"></div>
+        <table>
+            <tr>
+                <td><button onclick="limpar()">C</button></td>
+                <td><button onclick="apagar()">Del</button></td>
+                <td><button onclick="inserir('/')">÷</button></td>
+                <td><button onclick="inserir('*')">x </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('7')">7</button></td>
+                <td><button onclick="inserir('8')">8</button></td>
+                <td><button onclick="inserir('9')">9</button></td>
+                <td><button onclick="inserir('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('4')">4</button></td>
+                <td><button onclick="inserir('5')">5</button></td>
+                <td><button onclick="inserir('6')">6</button></td>
+                <td><button onclick="inserir('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="inserir('1')">1</button></td>
+                <td><button onclick="inserir('2')">2</button></td>
+                <td><button onclick="inserir('3')">3</button></td>
+                <td rowspan="2"><button onclick="calculo('=')"  onkeydown="if(event.key === 'Enter') calculo()"  style="height: 160.2px; background-color: #ff6f00;">=</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><button onclick="inserir('0')" style="width:160.2px;" >0</button></td>
+                <td><button onclick="inserir('.')">.</button></td>
+                
+            </tr>
+        </table>
+        <span class="nome">&copy;Felipe Bastos</span>
+    </div>
+    <script src="ex01.js"></script>
+</body>
+</html>
